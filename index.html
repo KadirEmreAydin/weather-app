@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Hava Durumu Uygulaması</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Weather App</h1>
+
+  <!-- Şehir giriş alanı / City input field -->
+  <input type="text" id="cityInput" placeholder="Şehir girin / Enter city name" />
+
+  <!-- Şehir listesinden seçim / Select from city list -->
+  <select id="citySelect">
+    <option value="">-- Şehir Seçin / Choose City --</option>
+    <option value="Istanbul">İstanbul</option>
+    <option value="Ankara">Ankara</option>
+    <option value="Izmir">İzmir</option>
+    <option value="Berlin">Berlin</option>
+    <option value="London">Londra</option>
+    <option value="New York">New York</option>
+  </select>
+
+  <!-- Buton / Button -->
+  <button onclick="getWeather()">Hava Durumunu Getir / Get Weather</button>
+
+  <!-- Sonuçların gösterileceği yer / Where results will be shown -->
+  <div id="weather"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
